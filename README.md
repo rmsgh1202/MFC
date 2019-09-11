@@ -7,3 +7,6 @@ By rootgo
 * UNIVERSITY
 
 ## 자기소개서
+
+* 이름 고근호
+* 학번 20141233
