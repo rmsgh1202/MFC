@@ -1,0 +1,31 @@
+3. Pen 메뉴얼
+
+1) Visual Studio 2019를 실행하여 [새 프로젝트 만들기]를 클릭합니다.
+2) [MFC 앱]을 클릭합니다.
+3) 프로젝트 이름을 지정한 후, 솔루션 및 프로젝트를 같은 디렉터리에 배치합니다.
+4) 애플리케이션 종류를 [대화 상자 기반]으로 설정 해줍니다.
+5) 대화 상자 제목을 지정 해줍니다.
+6) 사용자 인터페이스 기능을 마침 버튼을 눌러줍니다.
+7) 솔루션 탐색기에서 리소스 파일을 누르고 확장자가 rc인 파일을 누릅니다.
+8) Dilog에서 IDD_(지정한이름)_Dialog를 클릭합니다.
+9) 오른쪽 속성창에서 세번째 메시지 아이콘을 클릭합니다.
+10) [WM_MOUSEMOVE]를 클릭하여 [OnMouseMove]를 클릭합니다.
+11) if (nFlags == MK_LBUTTON) {
+
+	CClientDC dc(this);
+
+	CPen pen(PS_SOLID, 16, RGB(0, 255, 0));
+
+	dc.SelectObject(&pen);
+
+	dc.MoveTo(pnt);
+
+	dc.LineTo(point);
+
+	}
+
+	pnt = point;
+
+	CDialogEx::OnMouseMove(nFlags, point); 를 입력해줍니다.
+
+12) F5를 눌러 실행시켜 왼쪽버튼을 누르면 글씨가 써지게 됩니다.
